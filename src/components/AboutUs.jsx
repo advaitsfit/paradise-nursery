@@ -2,18 +2,29 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div style={{ padding: "40px", textAlign: "center" }}>
-      <h2>About Paradise Nursery</h2>
+    <div className="about-us-container">
+
+      <h1>About Paradise Nursery</h1>
+
+      <hr />
 
       <p>
-        Paradise Nursery is an online plant store dedicated to bringing
-        beautiful indoor and outdoor plants to your home.
+        Welcome to Paradise Nursery, your one-stop destination for beautiful and
+        healthy houseplants. We believe that plants bring life, freshness, and
+        positivity into every home.
       </p>
 
       <p>
-        Our goal is to promote a greener lifestyle by making plants accessible
-        to everyone.
+        Our mission is to make plant shopping simple and enjoyable. We carefully
+        select a wide range of indoor and outdoor plants that are perfect for
+        homes, offices, and gardens.
       </p>
+
+      <p>
+        At Paradise Nursery, we are passionate about helping people connect with
+        nature by bringing greenery into their everyday lives.
+      </p>
+
     </div>
   );
 };
