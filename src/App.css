@@ -1,31 +1,190 @@
-.background-image{
-  background-image:url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
-  background-size:cover;
-  background-position:center;
+/* ---------- General Page Styling ---------- */
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+
+nav{
+  margin-top:20px;
+  margin-bottom:30px;
+  font-size:18px;
+}
+
+nav a{
+  margin:0 10px;
+  text-decoration:none;
+  color:#1f1f1f;
+}
+
+/* ---------- Landing Page ---------- */
+
+.landing-page{
   min-height:100vh;
   display:flex;
-  justify-content:center;
+  flex-direction:column;
   align-items:center;
-}
-
-.landing-content{
+  justify-content:center;
   text-align:center;
-  background:rgba(255,255,255,0.8);
-  padding:40px;
-  border-radius:10px;
+
+  background-image:
+  linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+  url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+
+  background-size:cover;
+  background-position:center;
 }
 
-.about-us-container{
-  margin-top:20px;
-  color:#0a3d0a;
+.landing-page h1{
+  color:#1b3a1b;
+}
+
+.landing-page h2{
+  color:#0f3d0f;
+}
+
+.landing-page p{
+  color:#333;
 }
 
 button{
-  padding:10px 20px;
-  margin-top:20px;
+  padding:12px 28px;
+  font-size:16px;
   border:none;
-  border-radius:6px;
+  border-radius:8px;
   background-color:#0b6b0b;
   color:white;
   cursor:pointer;
+}
+
+button:hover{
+  background-color:#084b08;
+}
+
+/* ---------- Products Grid ---------- */
+
+.plants-container{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  justify-items:center;
+  margin-top:30px;
+}
+
+/* ---------- Plant Cards ---------- */
+
+.plant-card{
+  width:220px;
+  padding:20px;
+  border-radius:12px;
+
+  background:rgba(255,255,255,0.95);
+
+  box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+
+  text-align:center;
+}
+
+.plant-card img{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.plant-card:hover{
+  transform:scale(1.05);
+  transition:0.3s;
+}
+
+/* ---------- Shopping Cart Cards ---------- */
+
+/* ---------- CART CONTAINER ---------- */
+
+.cart-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:25px;
+}
+
+/* ---------- CART CARD ---------- */
+
+.cart-card{
+  display:flex;
+  align-items:center;
+  gap:25px;
+
+  width:650px;
+
+  padding:20px;
+
+  background:white;
+
+  border-radius:10px;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Cart Image */
+
+.cart-card img{
+  width:110px;
+  height:140px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+/* Info Section */
+
+.cart-info{
+  flex:1;
+  text-align:center;
+}
+
+/* Buttons Row */
+
+.cart-buttons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  margin-top:10px;
+}
+
+/* Quantity */
+
+.cart-buttons span{
+  font-weight:bold;
+  font-size:18px;
+}
+
+/* Buttons */
+
+.cart-buttons button{
+  padding:8px 16px;
+  border:none;
+  border-radius:8px;
+  background-color:#0b6b0b;
+  color:white;
+  cursor:pointer;
+}
+
+/* Delete button */
+
+.cart-buttons button:last-child{
+  background-color:crimson;
+}
+
+/* ---------- Cart Footer ---------- */
+
+.cart-footer{
+  margin-top:30px;
+  text-align:center;
+}
+
+.cart-footer button{
+  margin:10px;
 }
